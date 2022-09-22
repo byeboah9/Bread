@@ -1,0 +1,13 @@
+package Bread;
+
+public class SourdoughBread extends Bread{
+    int amountOfSourdough;
+    boolean sesameSeeds;
+    public SourdoughBread(int flour, int water, int salt, int sugar, int bakingPowder, int yeast,
+                          String breadName, boolean isBaked, String recipe, int amountOfSourdough, boolean sesameSeeds) {
+        super(flour, water, salt, sugar, bakingPowder, yeast, breadName, isBaked, recipe);
+        this.amountOfSourdough = amountOfSourdough;
+        this.sesameSeeds = sesameSeeds;
+    }
+
+}
