@@ -1,0 +1,83 @@
+package Bread;
+
+public class Bread {
+    private int flour;
+    private int water;
+    private int salt;
+    private int sugar;
+    private int bakingPowder;
+    private int yeast;
+    private String breadName;
+    private boolean isBaked;
+    private String recipe;
+   public Bread () {
+   }
+    public Bread(int flour, int water, int salt, int sugar, int bakingPowder, int yeast, String breadName, boolean isBaked, String recipe) {
+        this.flour = flour;
+        this.water = water;
+        this.salt = salt;
+        this.sugar = sugar;
+        this.bakingPowder = bakingPowder;
+        this.yeast = yeast;
+        this.breadName = breadName;
+        this.isBaked = isBaked;
+        this.recipe = recipe;
+    }
+
+    public int getFlour() {
+       return flour;
+   }
+   public int getWater() {
+       return water;
+   }
+
+    public int getYeast() {
+        return yeast;
+    }
+
+    public int getSalt() {
+        return salt;
+    }
+
+    public void setFlour(int flour) {
+        this.flour = flour;
+    }
+
+    public void setWater(int water) {
+        this.water = water;
+    }
+
+    public void setYeast(int yeast) {
+        this.yeast = yeast;
+    }
+
+    public void setSalt(int salt) {
+        this.salt = salt;
+    }
+
+    public void setRecipe(String recipe) {
+        this.recipe = recipe;
+    }
+
+    @Override
+    public String toString() {
+        return "Bread{" +
+                "flour=" + flour +
+                ", water=" + water +
+                ", salt=" + salt +
+                ", sugar=" + sugar +
+                ", bakingPowder=" + bakingPowder +
+                ", yeast=" + yeast +
+                ", breadName='" + breadName + '\'' +
+                ", isBaked=" + isBaked +
+                ", recipe='" + recipe + '\'' +
+                '}';
+    }
+
+    public void bake() {
+       System.out.println("Baked");
+    }
+    public void getIngredients() {
+        System.out.println("flour, water, salt, sugar, baking powder, yeast");
+    }
+}
