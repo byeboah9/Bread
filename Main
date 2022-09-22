@@ -1,0 +1,17 @@
+package Bread;
+
+public class Main {
+    public static void main (String[] args) {
+        Bread b = new Bread();
+        System.out.println("This is from main class: " + b);
+        b.bake();
+        b.getIngredients();
+        SourdoughBread s = new SourdoughBread(5, 5, 5, 5, 5, 5,
+                "Honey WHeat", true, "A recipe of Sourdough Bread: 1. Mix flour, water, salt, " +
+                "baking powder, yeast, and ripe sourdough starter. 2. Make the dough 3.Bulk Rise 4. Stretch and fold the dough " +
+                "5. Cut and shape the dough 6. Second rise 6. Preheat the oven to 450°F towards the tail end of the second rise. " +
+                "7. Spray the laof with luke warm water. 8. Bake the bread at 400°F for 20 minutes, until deep golden brown. " +
+                "9. Remove the bread from the oven. 10.Let the bread cool until good to eat.", 7, true);
+        System.out.println("This is from Sourdough Class: " + s);
+    }
+}
